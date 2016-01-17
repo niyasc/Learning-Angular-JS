@@ -1,7 +1,7 @@
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
 
-#myCalculator { margin: 0; padding: 0; font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 24px; max-width: 800px; }
+#myCalculator {margin: auto; 0; padding: 0; font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 24px; max-width: 800px; }
 
 
 /* CSS rules go here */
@@ -80,4 +80,109 @@
   content: 'per year';
   color: rgba(255, 255, 255, 0.5);
   padding-left: 4px;
+}
+
+#myCalculator form {
+  background: black;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#myCalculator form br {
+  display: none;
+}
+
+#myCalculator form > div {
+  color: white;
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 10px 0 5px 0;
+}
+
+#myCalculator form::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#myCalculator form h4 {
+  color: #aaa;
+  margin: 0 0 -5px 0;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+#myCalculator form p {
+  color: #888;
+  margin: 0 0 6px 0;
+  font-size:  0.9em;
+}
+
+#myCalculator form input[type="number"] {
+  width: 50px;
+  text-align: left;
+  font-size: 1em;
+  padding: 3px 0px 3px 5px;
+}
+
+#myCalculator form select {
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: #fff url('images/icons_arrows.svg') no-repeat right 6px;
+  background-size: 30px 20px;
+  padding: 3px 30px 3px 5px;
+}
+
+#myCalculator form select::-ms-expand {
+  display: none;
+}
+
+@media screen and(max-width: 500px) {
+  #myCalculator {
+    font-size: 15px;
+  }
+  #myCalculator main section {
+    background-size: 45px 71px;
+    padding-top: 80px;
+  }
+  #myCalculator main h4 {
+    margin: 0;
+    font-size: 0.75em;
+    letter-spacing: 0;
+  }
+  #myCalculator main p {
+    font-size: 1.1em;
+  }
+  #myCalculator main p+p {
+    font-size: 1em;
+  }
+  #myCalculator main p + p::after {
+    display: block;
+    margin-top: -10px;
+    color: #fff;
+  }
+
+  #myCalculator form h4 {
+    font-size: 1.1em;
+    margin: 0;
+  }
+  #myCalculator form p {
+    font-size: .8em;
+    line-height: 14px;
+  }
+  #myCalculator form br {
+    display: inline;
+  }
+  #myCalculator form input[type='number'] {
+    width: 30px;
+    font-size: .8em;
+  }
+  #myCalculator form select {
+    font-size: .8em;
+  }
 }
