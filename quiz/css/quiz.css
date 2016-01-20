@@ -201,3 +201,12 @@ body { background-color: #010101; padding: 20px; }
   background-color: #59adeb;
   background-image: url('../images/icon_twitter.svg');
 }
+#myQuiz .active, #myQuiz .inactive {
+  transition: left 1.5s ease-in-out;
+}
+#myQuiz .active {
+  left: 40px;
+}
+#myQuiz .intro.inactive, #myQuiz .inactive.answered {
+  left: -1300px;
+}
