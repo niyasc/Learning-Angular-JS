@@ -155,7 +155,13 @@ body { background-color: #010101; padding: 20px; }
 #myQuiz .question.answered .ans{
   cursor: default;
 }
-
+#myQuiz .question .ans.image {
+  min-height: 60px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+/*feedback*/
 #myQuiz .feedback {
   color: #efbe5e;
   margin-top: 10px;
