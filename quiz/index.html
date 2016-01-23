@@ -10,7 +10,10 @@
 	<div id="myQuiz" ng-controller="QuizController">
 		<h1>Test Your Knowledge: <span>Saturn</span></h1>
 		<div class="progress">
-			<div class="{{($index === activeQuestion) ? 'on' : 'off'}}" ng-repeat="question in myQuestions"></div>
+			<div class="{{($index === activeQuestion) ? 'on' : 'off'}}
+			{{(question.questionState === 'answered')? 'answered' : 'unanswered'}}
+			{{(question.correctness === 'correct')? 'correct' : 'incorrect'}}
+			" ng-repeat="question in myQuestions"></div>
 		</div>
 		<div class="intro {{(activeQuestion == -1) ? 'active' : 'inactive'}}">
 			<h2>Welcome</h2>
@@ -39,13 +42,11 @@
 			<div class="btn" ng-click="selectContinue()">Continue</div>
 		</div>
 	</div>
-	<div class="results">
+	<div class="results {{ (totalQuestions === activeQuestion)? 'active' : 'inactive'}}">
 		<h3>Results</h3>
-		<p>You scored X% by correctly answering X of total X questions</p>
+		<p>You scored {{percentage}}% by correctly answering {{score}} of total {{totalQuestions}} questions</p>
 		<p>Use the links below to challenge your friends</p>
-		<div class="share">
-			<a class="btn email" href="#">Email</a>
-			<a class="btn twitter" href="#">Tweet</a>
+		<div class="share" ng-bind-html="createShareLinks(percentage)">
 		</div>
 	</div>
 </div>
