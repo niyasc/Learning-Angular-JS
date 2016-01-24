@@ -1,0 +1,108 @@
+[
+  {
+    "question" : "How many chapters(Surah) are there in Holy Qur'an?",
+    "answers" : [
+      {"id" : 0, "text" : "14"},
+      {"id" : 1, "text" : "30"},
+      {"id" : 2, "text" : "114"},
+      {"id" : 3, "text" : "98"}
+    ],
+    "correct" : 2
+  },
+  {
+    "question" : "How many parts(Juz'a) are there in Holy Qur'an?",
+    "answers" : [
+      {"id" : 0, "text" : "511"},
+      {"id" : 1, "text" : "30"},
+      {"id" : 2, "text" : "114"},
+      {"id" : 3, "text" : "52"}
+    ],
+    "correct" : 1
+  },
+  {
+    "question" : "How many times, 'In the name of Allah who is the most beneficient and merciful'(بسم الله الرحمن الرحيم ) is repeated in Holy Qur'an?",
+    "answers" : [
+      {"id" : 0, "text" : "114"},
+      {"id" : 1, "text" : "39"},
+      {"id" : 2, "text" : "113"},
+      {"id" : 3, "text" : "115"}
+    ],
+    "correct" : 0,
+    "feedback" : "Though there is no 'bismi' at the beginning of chapter 'thouba', there is one 'bismi' in chapter 'naml' among verses"
+  },
+  {
+    "question" : "Pick odd one out?",
+    "answers" : [
+      {"id" : 0, "text" : "Cow"},
+      {"id" : 1, "text" : "Ant"},
+      {"id" : 2, "text" : "Spider"},
+      {"id" : 3, "text" : "Crow"}
+    ],
+    "correct" : 3,
+    "feedback": "There is no chapter with title crow. But there are chapters titled with other creatures"
+  },
+  {
+    "question" : "Which one is the longest chapter in Holy Qur'an?",
+    "answers" : [
+      {"id" : 0, "text" : "Al-Kauthar"},
+      {"id" : 1, "text" : "Al-Bakara"},
+      {"id" : 2, "text" : "Aali-Imran"},
+      {"id" : 3, "text" : "Thouba"}
+    ],
+    "correct" : 1
+  },
+  {
+    "question" : "Which of the following Chapter(Surah) is reffered as one third of Qur'an?",
+    "answers" : [
+      {"id" : 0, "text" : "Muhammed"},
+      {"id" : 1, "text" : "yaaseen"},
+      {"id" : 2, "text" : "Al-Bakara"},
+      {"id" : 3, "text" : "Al-Ikhlas"}
+    ],
+    "correct" : 3,
+    "feedback" : "Al-Ikhlas is reffered as one third of Qur'an since it describes all fundamentals of Thouheed(Oneness of Allah). Thouheed is one among three basic principles of Islam. Other two are Risalath(Divine message) and Aakhirath(Judement Day) "
+  },
+  {
+    "question" : "Pick odd one out",
+    "answers" : [
+      {"id" : 0, "text" : "Muhammed"},
+      {"id" : 1, "text" : "Moosa"},
+      {"id" : 2, "text" : "Ibraheem"},
+      {"id" : 3, "text" : "Younus"}
+    ],
+    "correct" : 1,
+    "feedback" : "There is no chapter titled Moosa in Holy Qur'an"
+  },
+  {
+    "question" : "Which is most disliked thing by Allah, though it is not haram, is mentioned in Qur'an?",
+    "answers" : [
+      {"id" : 0, "text" : "Gambling"},
+      {"id" : 1, "text" : "Divorce"},
+      {"id" : 2, "text" : "Interest"},
+      {"id" : 3, "text" : "Alcohol"}
+    ],
+    "correct" : 1
+  },
+  {
+    "question" : "Which Chapter(Surah) is reffered as heart of Holy Qur'an?",
+    "answers" : [
+      {"id" : 0, "text" : "kaaf"},
+      {"id" : 1, "text" : "yaaseen"},
+      {"id" : 2, "text" : "hood"},
+      {"id" : 3, "text" : "Fathiha"}
+    ],
+    "correct" : 1,
+    "feedback": "Yaseen is known as heart of Qur-an because it mentions almost all topics covered by Qur-an.It presents the essential themes of the Qur'an, such as the sovereignty of God, the unlimited power of God as exemplified by His creations, Paradise, the ultimate punishment of nonbelievers, resurrection, the struggle of believers against polytheists and nonbelievers, and the reassurance that the believers are on the right path, among others."
+  },
+  {
+    "question" : "Which of the chapters in Qur'an starts with 'Tabaraka-al-ladee__'",
+    "answers" : [
+      {"id" : 0, "text" : "Mulk and Furqan"},
+      {"id" : 1, "text" : "Mulk and Hashr"},
+      {"id" : 2, "text" : "Furqan and Hashr"},
+      {"id" : 3, "text" : "Mulk, Furqan and Hashr"},
+      {"id" : 4, "text" : "None of the above"}
+    ],
+    "correct" : 0
+  }
+]
