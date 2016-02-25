@@ -14,9 +14,14 @@ app.run(function ($httpBackend) {
 
 app.controller("formCtrl", ['$scope', '$http', function ($scope, $http) {
     $scope.data = {};
+    $scope.loading = false;
     $scope.submit = function () {
+        $scope.loading = true;
+        var i = 1000;
+        while(i-- > 0);
         $http.post('/login', $scope.data).success(function (data) {
             console.log("hi" + data);
         });
+        $scope.loading = false;
     };
 }]);
