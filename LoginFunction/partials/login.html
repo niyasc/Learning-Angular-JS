@@ -1,0 +1,14 @@
+<div class="row">
+    <form class="col-sm-6 col-sm-push-3 well input-form" name="inputform" ng-submit="submit()">
+        <div ng-show="postResult == 1" class="alert alert-success" role="alert">Authentication Success</div>
+        <div ng-show="postResult == 2" class="alert alert-danger" role="alert">Authentication Failed</div>
+        <div class="form-group has-feedback" ng-class="{'has-success': inputform.email.$dirty && inputform.email.$valid, 'has-error': inputform.email.$dirty && inputform.email.$invalid}">
+            <input ng-model="data.email" name="email" type="email" class="form-control better-placeholder" id="exampleInputEmail1" placeholder="Email" required="" autocomplete="off">
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-success': inputform.password.$dirty && inputform.password.$valid, 'has-error': inputform.password.$dirty && inputform.password.$invalid}">
+            <input ng-model="data.password" name="password" type="password" class="better-placeholder form-control" id="exampleInputPassword1" placeholder="Password" required="">
+        </div>
+        <input type="submit" class="btn btn-primary btn-unique" ng-disabled="loading || inputform.$invalid || inputform.$pristine" value="Submit">
+        <p ng-show="loading"><span class="glyphicon glyphicon-refresh"></span> processing..</p>
+    </form>
+</div>
